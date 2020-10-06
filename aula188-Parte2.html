@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+function focou(){
+    var caixa = document.getElementById('caixa')
+    caixa.style.background = 'yellow'
+}
+
+function desfocou(){
+    var caixa = document.getElementById('caixa')
+    caixa.style.background = ''
+}
+
+
+function caixa(){
+    //Selecionar o valor digitado
+    caixaValor = document.getElementById('caixa').value
+    //limpar o elemento
+
+  
+    if (caixaValor.length < 3){
+        //menor que três
+        document.getElementById('caixa').style.background = 'red'
+    }else{
+        document.getElementById('caixa').style.background = 'green'
+    }
+
+}
+    
+
+    </script>
+</head>
+
+
+<body>
+
+    <input onfocus="focou()" onblur="desfocou()" onkeyup="caixa()" id="caixa" type="text">
+    <hr /><br>
+
+
+
+
+
+</body>
+</html>
