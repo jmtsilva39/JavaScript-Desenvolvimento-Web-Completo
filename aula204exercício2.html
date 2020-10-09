@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Array</title>
+
+<script>
+
+    var objetos =Array('Cadeira', 'Impressora', 'Garfo')
+
+    function adicionar(){
+        valor = document.getElementById('caixa').value
+        var pesquisa = objetos.indexOf(valor)
+        if( valor == ''){
+            alert("Informe um valor válido")
+        }else if(pesquisa === -1){
+            objetos.push(valor);
+            console.log(objetos)
+        valor = document.getElementById('caixa').value =''
+
+        }else{
+            alert('Valor Já foi Adicionado')
+            valor = document.getElementById('caixa').value =''
+        }
+    }
+
+    function ordenar(){
+        console.log(objetos.sort())
+    }
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+
+    <input id="caixa" type="text" >
+
+    <input onclick="adicionar()" type="button" value="adicionar">
+
+    <input onclick="ordenar()" type="button" value="Ordenar">
+
+    
+    
+
+</body>
+</html>
