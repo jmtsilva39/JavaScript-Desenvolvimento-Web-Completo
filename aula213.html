@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Fixação</title>
+
+<script>
+/*
+
+Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de
+Arrays", implemente a mesma solução, porém utilizando o comando for
+
+*/
+
+var listaFrutas = ['Maça', 'Pera', 'Abacaxi', 'Uva']
+
+tamanho = listaFrutas.length
+console.log(tamanho)
+
+for(var x=0; x < tamanho ; x++){
+    document.write(listaFrutas[x] + "<br>")
+
+}
+
+document.write('<hr>')
+
+/* Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10
+(laços encadeados)", implemente a mesma solução, porém utilizando o comando while*/
+
+    var listaCoisas=['Caneta', 'Cadernos', 'Borracha', 'Lápis']
+
+var x =0;
+var y =0;
+
+    while(x <= 10){
+        y=1;
+        x++;
+            while(y < 10){
+            document.write(x + ' x ' + y + ' = ' + (x*y) + '<br>')
+            y++
+        }
+        document.write(x + ' x ' + y + ' = ' + (x*y) + '<br>')
+        document.write('<hr>')
+    }
+
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+    
+</body>
+</html>
