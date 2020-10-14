@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+
+<script>
+
+
+/*let quadrado = function(x){
+    return x * x
+}
+
+let quadrado = (x) => {
+    return x * x 
+}
+
+//caso um único parâmetro esteja sendo recebido o parênteses pode se emitido.
+let quadrado = x => {
+    return x * x 
+}
+*/
+
+//let quadrado = x => x*x //return implícito
+
+//document.write( quadrado(3))
+
+
+/*
+
+let parOuImpar = function(numero){
+
+    if(numero % 2 ===0){
+        return 'par'
+}else{
+        return`Impar`
+    }
+}
+
+
+*/
+
+let parOuImpar = numero => numero % 2 === 0 ? 'Par': 'Impar' 
+
+document.write(parOuImpar(155))
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

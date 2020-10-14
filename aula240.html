@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis Var e Let </title>
+
+
+<script>
+
+ //3 escopos: global, função e bloco
+
+var series = 'friends';
+
+function x(){
+    console.log(series)
+
+    if(true){
+        console.log(series)
+    }
+}
+
+x()
+
+
+if(true){
+    //dentro de escopos de blocos utilizando o var a variável sofre içamento.
+    var serie = 'The Walking Dead'
+    console.log(series)
+}
+
+// o let preserva o escopo onde a variável é criada.
+
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

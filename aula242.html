@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Var e Let</title>
+
+<script>
+
+    //Entendendo que o içamento das variáveis, dentro do bloco a variável let não é içada e não substitui a global
+
+let serie = 'Friends'
+
+{
+    let serie = 'The Walking Dead'
+    console.log('dentro do bloco: ' + serie)
+}
+
+console.log('fora do bloco: ' + serie)
+
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
