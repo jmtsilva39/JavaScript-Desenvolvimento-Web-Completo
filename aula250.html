@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da abstração a realidade</title>
+
+    <script>
+
+/*
+        let qtde_pernas = 4
+        let giratoria = true
+        let cor = 'azul'
+
+
+        let cadeiras = Array()
+
+        cadeiras[0] = Array()
+        cadeiras[0] = ['qtde_pernas'] = 4
+        cadeiras[0] = ['giratoria'] = false
+        cadeiras[0] = ['cor'] = 'azul'
+        
+        cadeiras[0] = Array()
+        cadeiras[0] = ['qtde_pernas'] = 1
+        cadeiras[0] = ['giratoria'] = true
+        cadeiras[0] = ['cor'] = 'vermelha'
+
+
+        function girar_cadeira(indice){
+            if(cadeiras[indice]['giratoria' === true){
+                console.log('girou')
+            }else{
+                console.log('cadeira não é giratoria')
+            }
+        }
+
+        girar_cadeira(1)
+*/
+
+//Paradigma de Orientação ao Objeto
+
+
+class Cadeira{
+    constructor(qtde_pernas, giratoria, cor){
+        this.qtde_pernas = qtde_pernas
+        this.giratoria = giratoria
+        this.cor = cor
+    }
+    girarCadeira(){
+        if(this.giratoria === true){
+            document.write('A cadeira é giratória')
+        }else{
+            document.write('Cadeira não é giratória')
+        }
+    }
+}
+let cadeira = new Cadeira(4, false, 'azul')
+let cadeira2 = new Cadeira(1, true, 'vermelha')
+
+cadeira.girarCadeira()
+console.log(cadeira)
+
+cadeira2.girarCadeira()
+
+
+
+class Sofa{
+    constructor(qtde_acentos, reclinavel, cor){
+        this.qtde_acentos = qtde_acentos
+        this.reclinavel = reclinavel
+        this.cor = cor
+    }
+
+    reclinarSofa(){
+        if(this.reclinavel === true){
+            document.write('<br>'+'sofá reclinável')
+        }else{
+            document.write('<br>'+'Não Reclinável')
+        }
+    }
+}
+
+
+let sofa = new Sofa(5, true, 'preto')
+let sofa2 = new Sofa(3, false, 'branco')
+
+
+sofa.reclinarSofa()
+console.log(sofa.reclinavel)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
